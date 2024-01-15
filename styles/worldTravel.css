@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+
+/* Shared Styles */
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+.common-color {
+    color: #FF5400;
+
+}
+.common-btn {
+    width: 174px;
+    height: 52px;
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* Header section */
+header,
+main {
+    max-width: 1195px;
+    margin: 50px auto;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title img {
+    max-width: 48px;
+    height: 2.25rem;
+
+}
+
+.tilte-container h3 {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-sidebar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 44px;
+}
+
+.hambar {
+    visibility: hidden;
+}
+
+.nav-sidebar ul a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+}
+
+/* Banner section */
+.banner-container {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/gurp13.png');
+    max-width: 100%;
+    height: 500px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+}
+
+/* .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  */
+
+.banner-title {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 4rem;
+    padding-top: 160px;
+    padding-left: 287px;
+    margin-bottom: 0px;
+    /* padding-top: 160px; */
+}
+
+.banner-discription {
+    /* padding-left: 47px; */
+    color: #FFF;
+    font-weight: 400;
+    padding-left: 247px;
+    margin-top: 24px;
+}
+
+.banner-input-feld {
+    max-width: 930px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-left: 160px;
+}
+
+.banner-input-discription {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 16px;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    margin: 24px;
+}
+
+#find-input {
+    background-color: #FF5400;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+}
+
+/* .banner-input-discription[type="text"][placeholder="Find Now"]::placeholder{
+    color:#FFF;
+} */
+
+/* Main section */
+/* Pupular section */
+.popular-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.pop-flex-1,
+.pop-flex-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.pupular-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.pupular-discription-container {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.popular-img-container {
+    margin-top: 45px;
+
+}
+
+/* Meadia Quary */
+/* Small device meadia quary */
+@media screen and (max-width: 600px) {
+    nav {
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .nav-sidebar ul a {
+        display: none;
+    }
+
+    .banner-title {
+        max-width: 250px;
+        height: 24px;
+        padding-top: 32px;
+        padding-left: 69px;
+        font-size: 1.3rem;
+    }
+
+    .banner-discription {
+        max-width: 304px;
+        text-align: center;
+        font-size: .87rem;
+        padding-left: 25px;
+    }
+
+    .banner-input-feld {
+        max-width: 250px;
+        height: 340px;
+        margin-left: 25px;
+    }
+
+    .banner-input-discription {
+        margin: 15px;
+        max-width: 250px;
+    }
+
+    .hambar {
+        visibility: visible;
+    }
+
+    .tilte-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px
+    }
+          /* main section */
+          /* popular section */
+    .popular-container{
+        flex-direction: column;
+    }
+    .popular-img-container img{
+        width: 100%;  
+    }
+}
