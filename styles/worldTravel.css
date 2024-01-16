@@ -286,6 +286,83 @@ nav {
     background: rgba(233, 68, 68, 0.05);
 }
 
+.video inframe {
+    width: 900px;
+    height: 500px;
+}
+
+.video-text {
+    max-width: 500px;
+}
+
+/* two box section */
+.two-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.left-box {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.left-box-title {
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding-left: 50px;
+     
+}
+
+.left-box-para {
+    padding-left: 50px;
+}
+
+.left-box-input input,
+button {
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 24px;
+    width: 393px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+
+}
+
+.left-btn {
+    color: white;
+    background-color: #FF5400;
+}
+
+.right-box {
+    position: relative;
+}
+
+.travel-com {
+    background-color: #FF5400;
+    color: #FFF;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 16px;
+    position: absolute;
+    left: 51%;
+    top: 58%;
+
+}
+
+/* left box */
+
+
 /* optional section */
 /* discount */
 .discout-head {
@@ -354,8 +431,14 @@ nav {
     border-radius: 8px;
     background: #FF5400;
     border: none;
-    margin-left:460px;
+    margin-left: 460px;
 }
+
+/* Add this CSS in your stylesheet */
+
+
+
+
 
 /* Meadia Quary */
 /* Small device meadia quary */
@@ -408,16 +491,20 @@ nav {
         gap: 70px
     }
 
+    /* optional  */
+
+
     /* main section */
     /* popular section */
     .popular-container,
     .destination-img,
-    .choose-body-text {
+    .choose-body-text,
+    .two-box {
         flex-direction: column;
     }
 
     .popular-img-container img,
-    .destination-row-1 img {
+    .destination-row-1 img, .right-box img {
         width: 100%;
     }
 
@@ -441,10 +528,22 @@ nav {
         left: 50%;
         top: 60%;
     }
-    .discount-btn{
+
+    .discount-btn {
         display: none;
     }
 
-
-
+    .left-box-input input,
+    button {
+        max-width: 300px;
+    }
+    .travel-com{
+        max-width: 200px;
+        width: 60%;
+        max-height: 40%;
+        left: 45%;
+        top: 50%;
+        position: right bottom;
+    }
+        
 }
