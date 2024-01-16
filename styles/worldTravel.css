@@ -399,7 +399,7 @@ button {
     background: rgba(255, 255, 255, 0.80);
     width: 80%;
     max-width: 600px;
-    height: 80%;
+    height: 60%;
 }
 
 .backgound-top-2 {
@@ -526,6 +526,9 @@ footer{
         margin-left: 10px;
     }
 
+    .backgound-top{
+        height: 80%;
+    }
     /* optional  */
 
 
