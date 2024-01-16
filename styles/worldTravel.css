@@ -437,9 +437,40 @@ button {
 /* Add this CSS in your stylesheet */
 
 
+/* footer section */
+footer{
+    padding-top: 25px;
+}
+.title-footer{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.footer-text{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+}
+.footer-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-icon ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 30px;
+}
+/* optionL */
+   .fast-row-trd{
+    display: flex;
+    justify-content: space-evenly; 
 
-
-
+   }
 /* Meadia Quary */
 /* Small device meadia quary */
 @media screen and (max-width: 600px) {
