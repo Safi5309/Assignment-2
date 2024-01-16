@@ -106,14 +106,16 @@ nav {
     margin-top: 24px;
 }
 
-.banner-input-feld {
+    .banner-input-feld {
     max-width: 930px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     margin-left: 160px;
-}
+    display:flex;
+    justify-content: center;
+} 
 
-.banner-input-discription {
+ .banner-input-discription {
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
@@ -123,20 +125,19 @@ nav {
     border-radius: 8px;
     background: #FFF;
     border: none;
-    margin: 24px;
+    margin: 20px;
 }
 
-#find-input {
+ #find-input {
     background-color: #FF5400;
     border-radius: 8px;
     text-align: center;
+    
     font-weight: 700;
     color: #FFF;
 }
 
-/* .banner-input-discription[type="text"][placeholder="Find Now"]::placeholder{
-    color:#FFF;
-} */
+ 
 
 /* Main section */
 /* Pupular section */
@@ -398,7 +399,7 @@ button {
     background: rgba(255, 255, 255, 0.80);
     width: 80%;
     max-width: 600px;
-    height: 60%;
+    height: 80%;
 }
 
 .backgound-top-2 {
@@ -521,6 +522,9 @@ footer{
         align-items: center;
         gap: 70px
     }
+    .back-top-text button{
+        margin-left: 10px;
+    }
 
     /* optional  */
 
@@ -530,7 +534,7 @@ footer{
     .popular-container,
     .destination-img,
     .choose-body-text,
-    .two-box {
+    .two-box,.banner-input-feld {
         flex-direction: column;
     }
 
@@ -557,7 +561,7 @@ footer{
 
     .backgound-top {
         left: 50%;
-        top: 60%;
+        top: 50%;
     }
 
     .discount-btn {
