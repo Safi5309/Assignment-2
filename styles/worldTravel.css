@@ -106,16 +106,16 @@ nav {
     margin-top: 24px;
 }
 
-    .banner-input-feld {
+.banner-input-feld {
     max-width: 930px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     margin-left: 160px;
-    display:flex;
+    display: flex;
     justify-content: center;
-} 
+}
 
- .banner-input-discription {
+.banner-input-discription {
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
@@ -128,16 +128,16 @@ nav {
     margin: 20px;
 }
 
- #find-input {
+#find-input {
     background-color: #FF5400;
     border-radius: 8px;
     text-align: center;
-    
+
     font-weight: 700;
     color: #FFF;
 }
 
- 
+
 
 /* Main section */
 /* Pupular section */
@@ -287,8 +287,8 @@ nav {
     background: rgba(233, 68, 68, 0.05);
 }
 
-.video inframe {
-    width: 900px;
+.video{
+    width: 100%;
     height: 500px;
 }
 
@@ -314,7 +314,7 @@ nav {
     font-size: 1.25rem;
     font-weight: 800;
     padding-left: 50px;
-     
+
 }
 
 .left-box-para {
@@ -439,39 +439,85 @@ button {
 
 
 /* footer section */
-footer{
+footer {
     padding-top: 25px;
 }
-.title-footer{
+
+.title-footer {
     text-align: center;
     margin-bottom: 0px;
 }
-.footer-text{
+
+.footer-text {
     text-align: center;
     margin: 20px auto;
     max-width: 500px;
 }
-.footer-icon ul{
+
+.footer-icon ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.footer-icon ul li{
+
+.footer-icon ul li {
     list-style: none;
     padding-right: 30px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     margin-top: 48px;
     margin-bottom: 30px;
 }
-/* optionL */
-   .fast-row-trd{
-    display: flex;
-    justify-content: space-evenly; 
 
-   }
+/* optionL */
+.fast-row-trd {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row-pic {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    max-width: 100%;
+    height: 360px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.row-pic img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-pic h3 {
+    color:  #5A5A5D;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.row-pic h2 {
+    color: #131318;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 5px;
+}
+.trending-title{
+    color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+margin-top: 60px;
+margin-bottom: 0px;
+}
+.trending-para{
+    text-align: center;
+}
+
 /* Meadia Quary */
 /* Small device meadia quary */
 @media screen and (max-width: 600px) {
@@ -522,30 +568,33 @@ footer{
         align-items: center;
         gap: 70px
     }
-    .back-top-text button{
+
+    .back-top-text button {
         margin-left: 10px;
     }
 
-    .backgound-top{
+    .backgound-top {
         height: 80%;
     }
-    /* optional  */
 
+    /* optional  */
 
     /* main section */
     /* popular section */
     .popular-container,
     .destination-img,
     .choose-body-text,
-    .two-box,.banner-input-feld {
+    .two-box,
+    .banner-input-feld, .fast-row-trd {
         flex-direction: column;
     }
 
     .popular-img-container img,
-    .destination-row-1 img, .right-box img {
+    .destination-row-1 img,
+    .right-box img {
         width: 100%;
     }
-
+    
     .destination {
         margin-top: 24px;
     }
@@ -575,7 +624,8 @@ footer{
     button {
         max-width: 300px;
     }
-    .travel-com{
+
+    .travel-com {
         max-width: 200px;
         width: 60%;
         max-height: 40%;
@@ -583,5 +633,19 @@ footer{
         top: 50%;
         position: right bottom;
     }
+    .fast-row-trd{
+        width:100%;
+    }
+    .row-pic{
         
+     max-width: 100%;
+     margin: 0;
+    } 
+    .ntest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
 }
